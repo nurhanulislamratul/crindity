@@ -1,0 +1,407 @@
+/*Header Part Start*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.logo{
+    position: absolute;
+    left: 90px;
+    top: 50px;
+}
+.logo a{
+    text-shadow: 2pz 2px 30px rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2f2e41;
+    letter-spacing: 2;
+}
+.searcharea{
+    position: fixed;
+    right: 90px;
+    top: 50px;
+    width: 170px;
+    height: 45px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    box-sizing: border-box;
+    z-index: 1;
+    border: 1px solid rgba(167, 158, 245, 0.1);
+}
+.searchbox input{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #1F1F1F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    padding: 0px 10px;
+}
+.searchbox input::placeholder{
+    color: #1D1D1D;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.section1{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-25%, -50%);
+}
+.section1 img{
+    height: 300px;
+}
+.section1button{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%, -50%);
+}
+.section1button h1, h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    line-height: 60px;
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    letter-spacing: 3px;
+    color: #3D3D4A;
+    text-transform: uppercase;
+}
+span{
+    color: #7A72FF;
+}
+.section1button h1{
+    letter-spacing: 30px;
+}
+.section1button .btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #2f2e41;
+    color: white;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: transparent !important;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+.section1button .btn:hover{
+    background-color: #7A72FF;
+    transition: all ease 0.3s;
+}
+.iconarea a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+.iconarea{
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    padding: 5px 0px;
+    z-index: 1;
+}
+.iconarea a i{
+    color:rgba(39,39,39,0.80);
+}
+.iconarea a i:hover{
+    color: #7A72FF;
+}
+/*Header Part end*/
+/*Product section 1 start*/
+.productsection{
+    width: 85%;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: -60px;
+    position: relative;
+    background-size: 1000px;
+    border-radius: 10px;
+}
+.productsection >h3{
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+    color: #323543;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width: 100%;
+}
+.productbox{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+}
+.productbox img{
+    height: 180px;
+}
+.productbox p{
+    color: #0000008e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5;
+}
+.productbox a{
+    color: #0000008e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.05rem;
+}
+.productbox .buybtn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    background: linear-gradient(120deg, #6d60ec 20%, #a166f4);
+    color: #FFFFFF;
+    display: none;
+    animation: fade 0.2s;
+}
+.productbox:hover .buybtn{
+    display: flex;
+}
+.productbox:hover{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #FFFFFF;
+}
+/*Product section 1 end*/
+/*About Section start*/
+.about{
+    width: 85%;
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 150px !important;
+}
+.aboutbox{
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.aboutbox h1{
+    color:#333333;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0px;
+}
+.aboutbox h4{
+    color: #333333;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.aboutbox p{
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #0000008e;
+    letter-spacing: 0.5px;
+}
+/*About Section end*/
+/*Product section 2 start*/
+.productsection2{
+    width: 85%;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: -60px;
+    position: relative;
+    background-size: 1000px;
+    border-radius: 10px;
+}
+.productsection2 >h3{
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+    color: #323543;
+}
+.product2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width: 100%;
+}
+.productbox2{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+}
+.productbox2 img{
+    height: 180px;
+}
+.productbox2 p{
+    color: #0000008e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5;
+}
+.productbox2 a{
+    color: #0000008e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.05rem;
+}
+.productbox2 .buybtn2{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    background: linear-gradient(120deg, #6d60ec 20%, #a166f4);
+    color: #FFFFFF;
+    display: none;
+    animation: fade 0.2s;
+}
+.productbox2:hover .buybtn2{
+    display: flex;
+}
+.productbox2:hover{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #FFFFFF;
+}
+/*Product section 2 end*/
+/*Subscribe section start*/
+.notification{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notification h3{
+    font-size: 1.6rem;
+    color: rgb(35, 35, 35);
+}
+.notificationinput{
+    width: 500px;
+    border-color: #fff;
+    border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+.notificationinput input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.notificationbutton{
+    width: 120px;
+    height: 40px;
+    background-color: #202020;
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px rgba(0,0,0, 0.1);
+    font-size: 1rem;
+}
+.notificationbutton:hover{
+    background-color: #6b60ec;
+    transition: all ease 0.3s;
+}
+/*Subscribe section end*/
+/*Footer start*/
+footer{
+    background-color: black !important;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+}
+
+
+/*Footer end*/
